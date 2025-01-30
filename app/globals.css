@@ -2,20 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@layer base {
+  body { @apply font-roboto }
+  h1, h2, h3, h4, h5, h6 { @apply font-oswald font-bold uppercase}
+  .h1 {@apply text-white md:text-8xl  tracking-[-3px] text-5xl}
+  .h2 {@apply text-[36px]}
+  .h3 {@apply text-[32px]}
+  .h4 {@apply text-[20px]}
+  .h5 {@apply text-[18px]}
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.active {
+  @apply text-main
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.swiper-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet {
+  @apply bg-accent
 }
+
+::-webkit-scrollbar {
+  @apply hidden
+}
+
