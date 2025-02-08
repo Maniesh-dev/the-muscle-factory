@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 import {motion} from 'framer-motion'
 import {fadeIn} from '@/lib/variants'
-import { div } from 'framer-motion/client'
+// import { useInView } from 'framer-motion/client'
 
 const team = [
   {
