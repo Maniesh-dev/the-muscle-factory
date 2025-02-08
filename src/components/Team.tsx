@@ -81,7 +81,7 @@ const Team = () => {
                 viewport={{once: false, amount: 0.2}}
                 className='border-b border-accent pb-4'>
                 <div className='relative w-[280px] h-[300px] mx-auto mb-4 '>
-                  <Image src={item.image} fill alt={item.name} />
+                  <Image src={item.image} alt={item.name} width={300} height={300}/>
                 </div>
                 <div className='px-2 flex flex-col items-center'>
                   <h4 className='h4 mb-2 '>{item.name}</h4>
