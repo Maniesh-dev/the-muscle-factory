@@ -7,11 +7,6 @@ import React, { useEffect, useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 import Sidebar from "./Sidebar"
 
-// interface SidebarProps {
-//   sidebarActive: boolean
-//   setSidebarActive: React.Dispatch<React.SetStateAction<boolean>>
-// }
-
 const Header =  () => {
   const [headerActive, setHeaderActive] = useState(false)
   const [sidebarActive, setSidebarActive] = useState(false)
