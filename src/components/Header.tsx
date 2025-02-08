@@ -7,10 +7,10 @@ import React, { useEffect, useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 import Sidebar from "./Sidebar"
 
-interface SidebarProps {
-  sidebarActive: boolean
-  setSidebarActive: React.Dispatch<React.SetStateAction<boolean>>
-}
+// interface SidebarProps {
+//   sidebarActive: boolean
+//   setSidebarActive: React.Dispatch<React.SetStateAction<boolean>>
+// }
 
 const Header =  () => {
   const [headerActive, setHeaderActive] = useState(false)
@@ -38,7 +38,7 @@ const Header =  () => {
           <GiHamburgerMenu className="text-3xl text-white cursor-pointer lg:hidden" onClick={() => setSidebarActive(true)}/>
         </div>
         <div className={`lg:hidden w-[70%] absolute right-0 top-0 h-screen ${sidebarActive ? "block" : "transform translate-x-full"} transition-all duration-300`}>
-          <Sidebar setSidebarActive={setSidebarActive} sidebarActive={sidebarActive}/>
+          <Sidebar setSidebarActive={setSidebarActive}/>
         </div>
       </div>
     </header>

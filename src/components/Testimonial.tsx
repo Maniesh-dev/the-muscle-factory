@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import { Pagination } from 'swiper/modules'
+import Image from 'next/image'
 
 
 const testimonials = [
@@ -85,7 +86,7 @@ const Testimonial = () => {
                   whileInView={'show'}
                   viewport={{once: false, amount: 0.2}}
                   className='flex flex-col items-center gap-4 md:gap-6 h-full'>
-                  <img src={item.img} alt={item.name} className='w-[90px] h-[90px] rounded-full object-cover border-2 border-accent' />
+                  <Image src={item.img} alt={item.name} className='w-[90px] h-[90px] rounded-full object-cover border-2 border-accent' />
                   <motion.div 
                     variants={fadeIn('up', 0.8)}
                     initial='hidden'

@@ -29,7 +29,7 @@ const Hero = () => {
                 whileInView={'show'}
                 viewport={{once: false, amount: 0.2}}
                 className='text-white italic text-center lg:text-left mb-4'>
-                “The hard days are the best because that's when champions are made, <br />so if you push through, you can push through anything.”
+                “The hard days are the best because that is when champions are made, <br />so if you push through, you can push through anything.”
               </motion.p>
               <motion.div 
                 variants={fadeIn('up', 0.8)}
@@ -63,7 +63,7 @@ const Hero = () => {
                 whileInView={'show'}
                 viewport={{once: false, amount: 0.2}}
                 className='text-white italic text-center lg:text-left mb-4'>
-                 “The only bad workout is the one that didn't happen.”
+                 “The only bad workout is the one that did not happen.”
               </motion.p>
               <motion.div 
                 variants={fadeIn('up', 0.8)}

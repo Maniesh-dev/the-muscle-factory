@@ -14,11 +14,10 @@ const links = [
 ]
 
 interface SidebarProps {
-  sidebarActive: boolean,
   setSidebarActive: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const Sidebar :React.FC<SidebarProps> = ({sidebarActive, setSidebarActive} : SidebarProps) => {
+const Sidebar = ({ setSidebarActive }: SidebarProps) => {
   return (
     <div className={`lg:hidden h-full bg-primary-200 w-full transition-all duration-300 `}>
       <RxCross2 size={25} className='absolute top-5 right-5 cursor-pointer text-white hover:text-main transition-all duration-300' onClick={() => setSidebarActive(false)}/>

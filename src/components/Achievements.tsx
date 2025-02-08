@@ -5,7 +5,7 @@ import { FaBriefcase, FaClock, FaTrophy } from "react-icons/fa"
 import { ImUser } from "react-icons/im"
 import {motion, useInView} from 'framer-motion'
 import { useRef } from "react"
-import { fadeIn } from "@/lib/variants"
+// import { fadeIn } from "@/lib/variants"
 
 const stats = [
   {

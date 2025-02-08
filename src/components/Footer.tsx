@@ -1,33 +1,33 @@
 "use client"
 
-import {  FaFacebook, FaYoutube, FaTwitter, FaLinkedin, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope,} from "react-icons/fa"
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope,} from "react-icons/fa"
 import Image from "next/image"
 import Link from "next/link"
-import { motion } from "framer-motion"
-import { fadeIn } from "@/lib/variants"
+// import { motion } from "framer-motion"
+// import { fadeIn } from "@/lib/variants"
 
-const socials = [
-  {
-    icon: <FaFacebook />,
-    link: "https://www.facebook.com/",
-  },
-  {
-    icon: <FaYoutube />,
-    link: "https://www.youtube.com/",
-  },
-  {
-    icon: <FaTwitter />,
-    link: "https://www.twitter.com/",
-  },
-  {
-    icon: <FaLinkedin />,
-    link: "https://www.linkedin.com/",
-  },
-  {
-    icon: <FaInstagram />,
-    link: "https://www.instagram.com/",
-  },
-]
+// const socials = [
+//   {
+//     icon: <FaFacebook />,
+//     link: "https://www.facebook.com/",
+//   },
+//   {
+//     icon: <FaYoutube />,
+//     link: "https://www.youtube.com/",
+//   },
+//   {
+//     icon: <FaTwitter />,
+//     link: "https://www.twitter.com/",
+//   },
+//   {
+//     icon: <FaLinkedin />,
+//     link: "https://www.linkedin.com/",
+//   },
+//   {
+//     icon: <FaInstagram />,
+//     link: "https://www.instagram.com/",
+//   },
+// ]
 
 
 const Footer = () => {
